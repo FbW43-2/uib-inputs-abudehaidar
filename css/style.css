@@ -1,0 +1,38 @@
+header {
+  background-color: rgba(224, 164, 12, 0.589);
+  text-align: center;
+}
+
+main {
+  width: 70%;
+  height: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+}
+input,
+textarea {
+  width: 30%;
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  padding: 5px;
+  width: 120px;
+}
+
+::placeholder {
+  color: blue;
+}
+
+input:invalid {
+  background-color: red;
+}
+input:focus,
+textarea:focus {
+  border: 3px solid black;
+}

@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <form action="search-bar" method="get">
+        <label for="search"></label>
+        <input
+          type="text"
+          name="search-article"
+          id="search-article"
+          aria-label="Search through article content"
+          placeholder="Search Article"
+        />
+        <button>Search</button>
+      </form>
+    </header>
+    <main>
+      <form action="upload-article" method="post">
+        <div>
+          <label for="First headline">Headline 1</label>
+          <input
+            type="text"
+            name="headline"
+            id="headline"
+            minlength="15"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div>
+          <label for="second-headline">Headline 2</label>
+          <input
+            type="text"
+            name="second-headline"
+            id="second-headline"
+            minlength="15"
+            maxlength="50"
+          />
+        </div>
+        <div>
+          <label for="article">Text</label>
+          <textarea
+            name="article"
+            id="article"
+            cols=""
+            rows="10"
+            minlength="40"
+            maxlength="500"
+            placeholder="Write something"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="image">Upload Image</label>
+          <input type="file" name="image" id="input" accept="image/*" />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
