@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <form action="/search-article" method="get">
+        <input
+          type="text"
+          name="search-article"
+          id="search-article"
+          aria-label="Search through article content"
+          placeholder="Search Article"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <fieldset>
+        <legend>
+          Upload Article to the System</legend>
+          <form action="/upload-article" method="post">
+        <div>
+          <label for="First headline">Headline 1</label>
+          <input
+            type="text"
+            name="headline"
+            id="headline"
+            minlength="15"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div>
+          <label for="second-headline">Headline 2</label>
+          <input
+            type="text"
+            name="second-headline"
+            id="second-headline"
+            minlength="15"
+            maxlength="50"
+          />
+        </div>
+        <div>
+          <label for="article"> Article Text</label>
+          <textarea
+            name="article"
+            id="article"
+            cols=""
+            rows="10"
+            minlength="40"
+            maxlength="500"
+            placeholder="Write something"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="image">Upload Image</label>
+          <input type="file" name="image" id="input" accept="image/*" />
+        </div>
+        <div>
+          <button type="submit">Upload Article</button>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input 
+          ype="password"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 5 or more characters"
+          required>
+        </div>
+      </form>
+      </fieldset>
+      
+    </main>
+  </body>
+</html>

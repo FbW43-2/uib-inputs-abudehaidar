@@ -1,0 +1,45 @@
+header {
+  background-color: rgba(224, 164, 12, 0.589);
+  text-align: center;
+}
+::placeholder {
+  color: blue;
+}
+
+main {
+  width: 70%;
+  height: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+legend{
+  font-weight: 900;
+}
+
+label {
+  display: ;
+}
+
+input,
+textarea {
+  width: 30%;
+  margin-left: 50px;
+}
+
+div{
+  padding: 10px;
+}
+
+button {
+  padding: 6px;
+  width: 120px;
+}
+
+input:invalid , textarea:invalid{
+  background-color: red;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px solid black;
+}
